@@ -3,7 +3,7 @@ on:
   workflow_run:
     workflows: ['Commit Stage']
     types: [completed]
-    branches: master
+    branches: main
 concurrency: acceptance #un seul workflow Acceptance stage peut s'exécuter à la fois
 
 jobs:
