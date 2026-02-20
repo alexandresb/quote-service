@@ -19,7 +19,7 @@ class QuoteServiceApplicationTests {
 	void whenAllQuotesThenReturn() {
 		webTestClient
 				.get()
-				.uri("/")
+				.uri("/quotes")
 				.exchange()
 				.expectStatus().is2xxSuccessful()
 				.expectBodyList(Quote.class);
